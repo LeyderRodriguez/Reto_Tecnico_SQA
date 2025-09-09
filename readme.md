@@ -39,6 +39,5 @@ En la raíz del proyecto:
 
 ## 👨‍💻 **Autor**
 Leyder Leoncio Rodriguez
-- 📧 leyder0232018@gmail.com
-- 🔗 GitHub:
-https://github.com/LeyderRodriguez?tab=repositories
+- **📧 Correo:** leyder0232018@gmail.com
+- **🔗 GitHub:** https://github.com/LeyderRodriguez?tab=repositories

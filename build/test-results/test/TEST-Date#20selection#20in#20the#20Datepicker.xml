@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Date selection in the Datepicker" tests="3" skipped="0" failures="1" errors="0" timestamp="2025-09-09T03:40:30" hostname="LEYDER" time="11.24">
+<testsuite name="Date selection in the Datepicker" tests="3" skipped="0" failures="1" errors="0" timestamp="2025-09-09T04:23:16" hostname="LEYDER" time="11.953">
   <properties/>
-  <testcase name="Select day 15 of the current month" classname="Date selection in the Datepicker" time="4.993"/>
-  <testcase name="Select day 10 of the next month" classname="Date selection in the Datepicker" time="3.318"/>
-  <testcase name="Validate that manual input is not allowed" classname="Date selection in the Datepicker" time="2.917">
+  <testcase name="Select day 15 of the current month" classname="Date selection in the Datepicker" time="5.134"/>
+  <testcase name="Select day 10 of the next month" classname="Date selection in the Datepicker" time="3.755"/>
+  <testcase name="Validate that manual input is not allowed" classname="Date selection in the Datepicker" time="3.044">
     <failure message="java.lang.AssertionError: The input field should remain empty&#10;Expected: &quot;&quot;&#10;     but: was &quot;12/25/2025&quot;" type="java.lang.AssertionError">java.lang.AssertionError: The input field should remain empty
 Expected: &quot;&quot;
      but: was &quot;12/25/2025&quot;
@@ -32,29 +32,29 @@ Expected: ""
 	at ?.the input field should remain empty(src/test/resources/features/test.feature:22)
 ?[0m
 ]]></system-out>
-  <system-err><![CDATA[sept. 08, 2025 10:40:30 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+  <system-err><![CDATA[sept. 08, 2025 11:23:16 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 140.0.7339.80 (670b6f192f4668d2ac2c06bd77ec3e4eeda7d648-refs/branch-heads/7339_41@{#3}) on port 65210
+Starting ChromeDriver 140.0.7339.80 (670b6f192f4668d2ac2c06bd77ec3e4eeda7d648-refs/branch-heads/7339_41@{#3}) on port 39801
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 65210.
-sept. 08, 2025 10:40:32 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+ChromeDriver was started successfully on port 39801.
+sept. 08, 2025 11:23:18 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-sept. 08, 2025 10:40:35 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+sept. 08, 2025 11:23:21 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 140.0.7339.80 (670b6f192f4668d2ac2c06bd77ec3e4eeda7d648-refs/branch-heads/7339_41@{#3}) on port 15720
+Starting ChromeDriver 140.0.7339.80 (670b6f192f4668d2ac2c06bd77ec3e4eeda7d648-refs/branch-heads/7339_41@{#3}) on port 58548
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 15720.
-sept. 08, 2025 10:40:35 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+ChromeDriver was started successfully on port 58548.
+sept. 08, 2025 11:23:22 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
-sept. 08, 2025 10:40:38 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+sept. 08, 2025 11:23:25 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-Starting ChromeDriver 140.0.7339.80 (670b6f192f4668d2ac2c06bd77ec3e4eeda7d648-refs/branch-heads/7339_41@{#3}) on port 62443
+Starting ChromeDriver 140.0.7339.80 (670b6f192f4668d2ac2c06bd77ec3e4eeda7d648-refs/branch-heads/7339_41@{#3}) on port 54818
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
-ChromeDriver was started successfully on port 62443.
-sept. 08, 2025 10:40:39 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+ChromeDriver was started successfully on port 54818.
+sept. 08, 2025 11:23:25 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: W3C
 ]]></system-err>
 </testsuite>
