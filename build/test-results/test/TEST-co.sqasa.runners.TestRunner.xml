@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="co.sqasa.runners.TestRunner" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="LEYDER" time="0.0">
+  <properties/>
+  <system-out><![CDATA[Feature: Date selection in the Datepicker
+
+  @Case1
+  Scenario: Select day 15 of the current month ?[90m# src/test/resources/features/test.feature:7?[0m
+
+  @Case2
+  Scenario: Select day 10 of the next month  ?[90m# src/test/resources/features/test.feature:13?[0m
+
+  @Case3
+  Scenario: Validate that manual input is not allowed  ?[90m# src/test/resources/features/test.feature:19?[0m
+
+?[31mFailed scenarios:?[0m
+?[31msrc/test/resources/features/test.feature:19 ?[0m# Validate that manual input is not allowed
+
+3 Scenarios (?[31m1 failed?[0m, ?[32m2 passed?[0m)
+9 Steps (?[31m1 failed?[0m, ?[32m8 passed?[0m)
+0m11,464s
+
+java.lang.AssertionError: The input field should remain empty
+Expected: ""
+     but: was "12/25/2025"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at co.sqasa.StepDef.TestStepDefinition.validateInputFieldRemainsEmpty(TestStepDefinition.java:99)
+	at ?.the input field should remain empty(src/test/resources/features/test.feature:22)
+
+]]></system-out>
+  <system-err><![CDATA[SLF4J(W): No SLF4J providers were found.
+SLF4J(W): Defaulting to no-operation (NOP) logger implementation
+SLF4J(W): See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J(W): Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J(W): Ignoring binding found at [jar:file:/C:/Users/leyde/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-simple/1.7.7/8095d0b9f7e0a9cd79a663c740e0f8fb31d0e2c8/slf4j-simple-1.7.7.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J(W): See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+]]></system-err>
+</testsuite>

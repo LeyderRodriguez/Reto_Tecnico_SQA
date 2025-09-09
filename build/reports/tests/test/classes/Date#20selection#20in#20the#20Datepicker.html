@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class Date selection in the Datepicker</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class Date selection in the Datepicker</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/default-package.html">default-package</a> &gt; Date selection in the Datepicker</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">3</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">1</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">11.228s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox failures" id="successRate">
+<div class="percent">66%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Failed tests</a>
+</li>
+<li>
+<a href="#tab1">Tests</a>
+</li>
+<li>
+<a href="#tab2">Standard output</a>
+</li>
+<li>
+<a href="#tab3">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Failed tests</h2>
+<div class="test">
+<a name="Validate that manual input is not allowed"></a>
+<h3 class="failures">Validate that manual input is not allowed</h3>
+<span class="code">
+<pre>java.lang.AssertionError: The input field should remain empty
+Expected: &quot;&quot;
+     but: was &quot;12/25/2025&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at co.sqasa.StepDef.TestStepDefinition.validateInputFieldRemainsEmpty(TestStepDefinition.java:99)
+	at ✽.the input field should remain empty(src/test/resources/features/test.feature:22)
+</pre>
+</span>
+</div>
+</div>
+<div id="tab1" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">Select day 10 of the next month</td>
+<td class="success">3.318s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Select day 15 of the current month</td>
+<td class="success">4.993s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="failures">Validate that manual input is not allowed</td>
+<td class="failures">2.917s</td>
+<td class="failures">failed</td>
+</tr>
+</table>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>    ?[32mGiven ?[0m?[32mI open the Datepicker page?[0m           ?[90m# TestStepDefinition.openDatepickerPage()?[0m
+    ?[32mWhen ?[0m?[32mI select day ?[0m?[32m?[1m15?[0m?[32m of the current month?[0m  ?[90m# TestStepDefinition.selectDayOfCurrentMonth(int)?[0m
+Date in input: 09/15/2025
+    ?[32mThen ?[0m?[32mthe selected date should contain ?[0m?[32m?[1m15?[0m   ?[90m# TestStepDefinition.validateSelectedDate(int)?[0m
+    ?[32mGiven ?[0m?[32mI open the Datepicker page?[0m         ?[90m# TestStepDefinition.openDatepickerPage()?[0m
+    ?[32mWhen ?[0m?[32mI select day ?[0m?[32m?[1m10?[0m?[32m of the next month?[0m   ?[90m# TestStepDefinition.selectDayOfNextMonth(int)?[0m
+Date in input: 10/10/2025
+    ?[32mThen ?[0m?[32mthe selected date should contain ?[0m?[32m?[1m10?[0m ?[90m# TestStepDefinition.validateSelectedDate(int)?[0m
+    ?[32mGiven ?[0m?[32mI open the Datepicker page?[0m                   ?[90m# TestStepDefinition.openDatepickerPage()?[0m
+    ?[32mWhen ?[0m?[32mI try to enter the date &quot;?[0m?[32m?[1m12/25/2025?[0m?[32m&quot; manually?[0m ?[90m# TestStepDefinition.tryToEnterDateManually(String)?[0m
+Value after manual input attempt: '12/25/2025'
+    ?[31mThen ?[0m?[31mthe input field should remain empty?[0m           ?[90m# TestStepDefinition.validateInputFieldRemainsEmpty()?[0m
+      ?[31mjava.lang.AssertionError: The input field should remain empty
+Expected: &quot;&quot;
+     but: was &quot;12/25/2025&quot;
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at co.sqasa.StepDef.TestStepDefinition.validateInputFieldRemainsEmpty(TestStepDefinition.java:99)
+	at ?.the input field should remain empty(src/test/resources/features/test.feature:22)
+?[0m
+</pre>
+</span>
+</div>
+<div id="tab3" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>sept. 08, 2025 10:40:30 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 140.0.7339.80 (670b6f192f4668d2ac2c06bd77ec3e4eeda7d648-refs/branch-heads/7339_41@{#3}) on port 65210
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 65210.
+sept. 08, 2025 10:40:32 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+sept. 08, 2025 10:40:35 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 140.0.7339.80 (670b6f192f4668d2ac2c06bd77ec3e4eeda7d648-refs/branch-heads/7339_41@{#3}) on port 15720
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 15720.
+sept. 08, 2025 10:40:35 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+sept. 08, 2025 10:40:38 P. M. org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Starting ChromeDriver 140.0.7339.80 (670b6f192f4668d2ac2c06bd77ec3e4eeda7d648-refs/branch-heads/7339_41@{#3}) on port 62443
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully on port 62443.
+sept. 08, 2025 10:40:39 P. M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 8/09/2025, 10:40:42 p. m.</p>
+</div>
+</div>
+</body>
+</html>

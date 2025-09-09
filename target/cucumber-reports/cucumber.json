@@ -1,0 +1,230 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 637699100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestStepDefinition.setupDriver()"
+            }
+          }
+        ],
+        "line": 7,
+        "name": "Select day 15 of the current month",
+        "description": "",
+        "id": "date-selection-in-the-datepicker;select-day-15-of-the-current-month",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2547079100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I open the Datepicker page",
+            "match": {
+              "location": "TestStepDefinition.openDatepickerPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1026703400,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I select day 15 of the current month",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 13
+                }
+              ],
+              "location": "TestStepDefinition.selectDayOfCurrentMonth(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 190096200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "the selected date should contain 15",
+            "match": {
+              "arguments": [
+                {
+                  "val": "15",
+                  "offset": 33
+                }
+              ],
+              "location": "TestStepDefinition.validateSelectedDate(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Case1"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 20147000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestStepDefinition.setupDriver()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Select day 10 of the next month",
+        "description": "",
+        "id": "date-selection-in-the-datepicker;select-day-10-of-the-next-month",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1795599900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I open the Datepicker page",
+            "match": {
+              "location": "TestStepDefinition.openDatepickerPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 932460200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "I select day 10 of the next month",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 13
+                }
+              ],
+              "location": "TestStepDefinition.selectDayOfNextMonth(int)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 117182600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "the selected date should contain 10",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 33
+                }
+              ],
+              "location": "TestStepDefinition.validateSelectedDate(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Case2"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14769000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TestStepDefinition.setupDriver()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Validate that manual input is not allowed",
+        "description": "",
+        "id": "date-selection-in-the-datepicker;validate-that-manual-input-is-not-allowed",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1768402900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "I open the Datepicker page",
+            "match": {
+              "location": "TestStepDefinition.openDatepickerPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 413025900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "I try to enter the date \"12/25/2025\" manually",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12/25/2025",
+                  "offset": 25
+                }
+              ],
+              "location": "TestStepDefinition.tryToEnterDateManually(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.AssertionError: The input field should remain empty\nExpected: \"\"\n     but: was \"12/25/2025\"\r\n\tat org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)\r\n\tat co.sqasa.StepDef.TestStepDefinition.validateInputFieldRemainsEmpty(TestStepDefinition.java:99)\r\n\tat ✽.the input field should remain empty(src/test/resources/features/test.feature:22)\r\n",
+              "duration": 195136800,
+              "status": "failed"
+            },
+            "line": 22,
+            "name": "the input field should remain empty",
+            "match": {
+              "location": "TestStepDefinition.validateInputFieldRemainsEmpty()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Case3"
+          }
+        ]
+      }
+    ],
+    "name": "Date selection in the Datepicker",
+    "description": "",
+    "id": "date-selection-in-the-datepicker",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/test.feature",
+    "tags": []
+  }
+]

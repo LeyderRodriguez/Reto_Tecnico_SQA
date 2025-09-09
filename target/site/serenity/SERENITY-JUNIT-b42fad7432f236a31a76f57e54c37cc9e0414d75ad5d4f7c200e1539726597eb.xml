@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Date selection in the Datepicker" skipped="0" tests="3" time="10.55" timestamp="2025-09-08 10:40:30"><testcase name="Select day 15 of the current month"/><testcase name="Select day 10 of the next month"/><testcase name="Validate that manual input is not allowed"><failure message="The input field should remain empty&#10;Expected: &quot;&quot;&#10;     but: was &quot;12/25/2025&quot;" type="java.lang.AssertionError">The input field should remain empty
+Expected: ""
+     but: was "12/25/2025"</failure><system-err>The input field should remain empty
+Expected: ""
+     but: was "12/25/2025"&#13;
+co.sqasa.StepDef.TestStepDefinition.validateInputFieldRemainsEmpty(TestStepDefinition.java:99)&#13;
+✽.the input field should remain empty(src/test/resources/features/test.feature:22)&#13;
+</system-err></testcase></testsuite>

@@ -1,0 +1,2 @@
+co/sqasa/pageObjects/Objects.java
+ co.sqasa.pageObjects.Objects
