@@ -18,8 +18,25 @@ El objetivo es automatizar pruebas sobre el componente **Datepicker de JQuery UI
 
 ## Escenarios implementados
 1. **Case1** – Selección del día 15 del mes actual.
+    <p align="center">
+      <img src=".img/case1.png" alt="Caso 1" width="450"/>
+    </p>
+
+
 2. **Case2** – Selección del día 10 del próximo mes.
+    <p align="center">
+      <img src=".img/case2.png" alt="Caso 2" width="450"/>
+    </p>
+
+
 3. **Case3** – Validación de intento de ingreso manual en el campo de texto.
+    _"El escenario de validación del campo bloqueado se implementó de acuerdo con el enunciado.
+    Sin embargo, durante la ejecución se observó que el componente Datepicker de JQuery UI sí permite
+    la entrada manual de texto en el input. Por esa razón, el escenario falla, mostrando el
+    comportamiento real de la aplicación bajo prueba."_
+   <p align="center">
+      <img src=".img/case3.png" alt="Caso 3" width="450"/>
+    </p>
 
 ---
 
